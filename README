@@ -1,0 +1,26 @@
+Mini Projects,
+This repository contains small applications/programs I created for fun.
+
+
+Snake:
+Basic snake game in java
+
+
+Sudoku Solver:
+A programs that solves 9x9 SuDoKu puzzles.
+Also contains a GUI version (SuDoKuSwing)
+SuDoKu.java has test input attached at the end.
+
+
+Guessing Game:
+Hangman like minigame we used to play in college. 
+Computer retrieves a random movie name from a file & shows it in the form of _s & *s.
+Each underscore represents a character & asterisk represents a vowel.
+Player has to guess the movie by entering 1 character at a time.
+
+Bubble Burster:
+A game for kids. 
+Bubbles (colored circles) emerge from the bottom with a letter on them.
+Player has to burst green and blue bubbles before they reach top of the frame.
+A bubble can be burst by pressing key shown on it.
+
