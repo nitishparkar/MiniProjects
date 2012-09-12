@@ -10,8 +10,9 @@ import javax.imageio.ImageIO;
 
 /*
 * Title: Bubble Burster in Java
-* Author: Nitish Parkar 09-187 
+* Author: Nitish Parkar 
 */
+
 public class BubbleBurster1 extends JFrame{
 
 	static int width=800;
@@ -25,7 +26,7 @@ public class BubbleBurster1 extends JFrame{
 		setVisible(true);
 		bc.requestFocus();
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                bc.runGame();
+        bc.runGame();
 	}
 	
 	public static void main(String[] args) {
@@ -36,7 +37,7 @@ public class BubbleBurster1 extends JFrame{
 
 class BubbleCanvas extends Canvas implements KeyListener{
 
-        private Image dbImage;
+    private Image dbImage;
 	private Graphics dbg;
 	int missedBubblesCount=0;
 	int score=0;
@@ -50,20 +51,16 @@ class BubbleCanvas extends Canvas implements KeyListener{
         } catch (IOException ex) {
             Logger.getLogger(BubbleCanvas.class.getName()).log(Level.SEVERE, null, ex);
         }
-            addKeyListener(this);
-            setBackground(Color.WHITE);
-            Thread bubbleGenerator=new Thread(new BubbleAdder());
-            bubbleGenerator.start();
-            //generateBubble();
-            //generateBubble();
-            //generateBubble();
+        addKeyListener(this);
+        setBackground(Color.WHITE);
+        Thread bubbleGenerator=new Thread(new BubbleAdder());
+        bubbleGenerator.start();
 	}
 
-        void killBubble(char c){
-            //System.out.println("kill:"+c);
-            Iterator<Bubble> it=bubbles.iterator();
-            while(it.hasNext()){
-                Bubble b=it.next();
+    void killBubble(char c){
+        Iterator<Bubble> it=bubbles.iterator();
+        while(it.hasNext()){
+            Bubble b=it.next();
                 if(b.letter==c){
                     switch(b.color){
                         case 0:
@@ -79,13 +76,12 @@ class BubbleCanvas extends Canvas implements KeyListener{
                     }
                     it.remove();
                 }
-            }
-
         }
+	}
 
-        void collisionDetection(){
-            Iterator<Bubble> it=bubbles.iterator();
-            while(it.hasNext()){
+    void collisionDetection(){
+        Iterator<Bubble> it=bubbles.iterator();
+        while(it.hasNext()){
                 Bubble b=it.next();
                 if(b.y<=0){
                     if(b.color<2){
@@ -104,7 +100,6 @@ class BubbleCanvas extends Canvas implements KeyListener{
 				x.y = x.y - x.speed;
 			}
 			repaint();
-                        //update(this.getGraphics());
 			try {
 				Thread.sleep(100);
 			} catch (InterruptedException e) {

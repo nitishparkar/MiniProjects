@@ -20,8 +20,8 @@ Player has to guess the movie by entering 1 character at a time.
 
 
 Bubble Burster:
-A game for kids. 
+A small game for kids. 
 Bubbles (colored circles) emerge from the bottom with a letter on them.
 Player has to burst green and blue bubbles before they reach top of the frame.
 A bubble can be burst by pressing key shown on it.
-
+[requires a jpeg file named underwater.jpg in the same directory as class files for better experience :)]
