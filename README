@@ -7,9 +7,9 @@ Basic snake game in java
 
 
 Sudoku Solver:
-A programs that solves 9x9 SuDoKu puzzles.
-Also contains a GUI version (SuDoKuSwing)
+Programs that solve 9x9 SuDoKu puzzles.
 SuDoKu.java has test input attached at the end.
+sudoku.py reads input from test_input.txt
 
 
 Guessing Game:
