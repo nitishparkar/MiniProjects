@@ -3,6 +3,13 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.io.*;
 
+
+/**
+ * @author Nitish Parkar
+ * created ~2010
+ */
+
+
 class SudokuSwing
 {
 	public static void main(String args[])throws IOException
